@@ -1,0 +1,247 @@
+/* .map {
+  width: 700px;
+  height: 600px;
+  border: thin 2px;
+  margin-left: 25%;
+  margin-bottom: 20px;
+} */
+
+/* h1 {
+  margin-left: 20px;
+} */
+.hbDropdown {
+  margin-left: 30px;
+  background-color: red;
+}
+
+.invisible {
+  display: none;
+}
+
+.helmet {
+  height:"100px";
+  width:"100px";
+  border-radius: 35%
+}
+
+.tooltips-inner {
+  color: red;
+  font-size: larger;
+}
+
+/* .suzuki {
+  display: none;
+} */
+
+/* .tooltips {
+  height:"100px";
+  width:"100px";
+  border-radius: 35%
+} */
+/* #map {
+    width: 80%;
+    height: 100vh;
+    border: thin 2px;
+    margin-left: 25%;
+    margin-bottom: 50px;
+    flex-basis: 0;
+    flex-grow: 4;
+  } */
+
+.bg-image {
+    display: block;
+    width: 100%;
+}
+
+.bg-image {
+    background-size: cover;
+    min-height: 35vh;
+    
+}
+
+.cherish {
+    font-size: 100px;
+    
+}
+
+/* .container-2 {
+    position: relative;
+    width: 100%;
+    height: 100%; 
+    transition: 1s;
+} */
+
+.dateLabel {
+    padding-right: 10px;
+}
+#locationInput {
+margin-bottom: 10px;
+}
+#previewMap, #return{
+    margin-top: 40px;
+    margin-left: 70px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 20px;
+    
+}
+
+.helmet:hover {
+    transform: scale(1.5);
+}
+ 
+.target.over {
+  cursor: move;
+  border: 20px dotted #666;
+}
+
+
+.motorcycle:hover {
+    transform: scale(1.5);
+}
+
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.image-container img{
+    flex: 0 0 100px;
+    margin: 5px;
+
+}
+
+.image-container div{
+    flex: 0 0 100px;
+    margin: 5px;
+    text-align: center;
+}
+
+/* .HDavidson {
+    display: flex;
+    background-color: white;
+
+} */
+
+/* .HDavidson img{
+    flex: 1;
+    background-color: white;
+} */
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .suzuki {
+    /* Prevent the user selecting text in the example */
+    user-select: none;
+  }
+  
+  #draggable {
+    text-align: center;
+    background: white;
+  }
+  
+  /* .dropzone {
+    width: 500px;
+    height: 300px;
+    background: white;
+    margin: 10px;
+    padding: 10px;
+  } */
+  
+  .dropzone.dragover {
+    background-color: purple;
+  }
+  
+  .dragging {
+    opacity: 0.5;
+  } */
+  
+
+  .Directions {
+    color: red;
+  }
+h3 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h1 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#chooseRide {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#takeRideButton {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h5 {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#return {
+  padding-left: 60px;
+  padding-right: 70px;
+  align-items: center;
+}

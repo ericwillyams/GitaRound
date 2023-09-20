@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script type="module" src="./index.js"></script>
+    <title>Frontend Project 101</title>
+  </head>
+  <body class="bg-dark-subtle">
+    <header class="head bg-danger">
+      <h1 class="git ms-5 text-dark">GitARound</h1>
+    </header>
+    <div class>
+      <div id="hbMenu">
+        <button
+          class=" btn btn-info hbDropdown mt-3 btn btn-danger text-dark fw-bold"
+          id="takeRideButton"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasScrolling"
+          aria-controls="offcanvasScrolling"
+        >Take a Ride
+        </button>
+        </div>
+            <div class="container-fluid p-4">
+              <div class="row justify-content-end">
+
+                <div class="col-6">
+                  <div id="map" class="map mb-4 ps-4" style="width: 700px; height: 600px;">Map Goes Here</div>
+                </div>
+              
+                <div class="panel-body col-3 justify-content-end">
+                  <h3 class="Directions text-dark">Directions</h3>
+                  <div id="panel" class="overflow-auto bg-white w-80 h-75"></div>
+                </div>
+
+              </div>
+            </div>
+
+
+            <section class="theMap" ref="map"></section>
+        <div>
+            <div
+              class="offcanvas offcanvas-start mt-5"
+              data-bs-scroll="true"
+              data-bs-backdrop="false"
+              tabindex="-1"
+              id="offcanvasScrolling"
+              aria-labelledby="offcanvasScrollingLabel"
+            >
+            
+              <div class="offcanvas-header">
+                <h3 class="offcanvas-title" id="offcanvasScrollingLabel">
+                  Where to?
+                </h3>
+                <!-- <button class="btn btn-sm btn-primary btn-danger rounded-pill" id="clear">Clear All</button> -->
+
+                <br>
+                <br>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body" id="container">
+
+                <label for="location" class="location">Start From</label>
+                <input type = "search" class="form-control" id="startFromInput" placeholder="Type your location">
+
+                <div>
+                    <div>
+                <br>
+                <!-- <label for="location" class="location">Destination</label>
+                <input class="form-control" id="destinationInput" placeholder="Type your destination"> -->
+                <label for="exampleDataList" class="location">Destination</label>
+<input type= "search" class="form-control" list="datalistOptions" id="destinationInput" placeholder="Type your destination">
+<datalist id="datalistOptions">
+  <option value="800 Battery Ave SE, Atlanta, GA 30339" id="batteryAtlanta">The Battery Atlanta
+  <option value="181 Peachtree St NE, Atlanta, GA 30303" id="ritzCarlton"> The Ritz Carlton Atlanta
+  <option value="6000 N Terminal Pkwy Suite 4000, Atlanta, GA 30320"> Hartsfield-Jackson Atlanta International Airport
+  <option value="225 Baker St NW, Atlanta, GA 30313">The Georgia Aquarium
+  <option value="1 AMB Dr NW, Atlanta, GA 30313">Mercedes-Benz Stadium
+</datalist>
+
+                <br>
+                <br>
+                <h3>Fastest Route</h3>
+                <label for="dedication" class="toggleSwitch">
+                    <label class="switch">
+                      <input type="checkbox" id="fastestSwitch">
+                      <span class="slider round"></span>
+                    </label>
+                    <br>
+                    <h3>Safest Route</h3>
+                <label for="dedication" class="toggleSwitch">
+                    <label class="switch">
+                      <input type="checkbox" id="safestSwitch">
+                      <span class="slider round"></span>
+                    </label>
+                  <br>
+                  <button type="button" class="btn btn-info btn-danger" id="previewMap">Preview Map</button>
+                  <br>
+                  <a class="btn btn-info text-center btn-danger mb-2" href="index1.html" role="button" id="return">Back Home</a>
+              </div>
+        </div>
+        <footer>
+          <p
+            class="copy-write fixed-bottom text-center text-white fw-bold bg-danger m-0"
+          >
+            &copy; 2023 GitARound a Donte and Eric production. All rights reserved.
+          </p>
+        </footer>
+    <script src="directions.js"></script>
+    <script src="index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAfQ3lVI4_5YkKo37XDNM9CB7IXzkg0jQw&callback=initMap">
+</script>
+  </body>
+</html>
